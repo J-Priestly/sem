@@ -27,6 +27,5 @@ jobs:
       - name: view logs
         run: docker logs semcontainer
 
-      - name: List files in /tmp
-        run: docker exec semcontainer ls -la /tmp
+    
 
