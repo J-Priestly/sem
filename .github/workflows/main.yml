@@ -26,3 +26,7 @@ jobs:
         run: docker run --network se-methods --name semcontainer se_methods
       - name: view logs
         run: docker logs semcontainer
+
+      - name: List files in /tmp
+        run: docker exec semcontainer ls -la /tmp
+
